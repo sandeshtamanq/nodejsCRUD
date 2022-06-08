@@ -6,7 +6,8 @@ const path = require("path");
 const app = express();
 const homeRoute = require("./server/routes/home");
 const updateUserRoute = require("./server/routes/updateUser");
-const addUserRoute = require("./server/routes/addUser");
+const userRoute = require("./server/routes/user");
+const facultyRoute = require("./server/routes/faculty");
 const connectDB = require("./server/database/connection");
 dotenv.config({ path: "config.env" });
 const PORT = process.env.PORT || 8000;
@@ -31,9 +32,9 @@ app.use("/img", express.static(path.resolve(__dirname, "assets/img")));
 app.use("/js", express.static(path.resolve(__dirname, "assets/js")));
 
 app.use("/", homeRoute);
-app.use("/add-user", addUserRoute);
+app.use("/user", userRoute);
 app.use("/update-user", updateUserRoute);
-
+app.use("/add-faculty", facultyRoute);
 app.listen(PORT, () => {
   console.log(`listening to ${PORT}`);
 });

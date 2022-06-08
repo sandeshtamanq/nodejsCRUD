@@ -9,3 +9,7 @@ exports.addUserRouteRender = (req, res) => {
 exports.updateUserRouteRender = (req, res) => {
   res.render("update_user");
 };
+
+exports.addFacultyRouteRender = (req, res) => {
+  res.render("add_faculty");
+};

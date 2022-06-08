@@ -159,12 +159,14 @@ table {
 }
 
 #update_user .form-group,
-#add_user .form-group {
+#add_user .form-group,
+#add_faculty .form-group {
   margin: 0.4em 0;
 }
 
 #update_user .form-group input[type="text"],
-#add_user .form-group input[type="text"] {
+#add_user .form-group input[type="text"],
+#add_faculty .form-group input[type="text"] {
   width: 100%;
   padding: 0.6em 1em;
   margin: 0.5em 0;
@@ -220,7 +222,8 @@ table {
 }
 
 #update_user .form-group .btn,
-#add_user .form-group .btn {
+#add_user .form-group .btn,
+#add_faculty .form-group .btn {
   width: 100%;
   padding: 0.9em 1em;
   background-color: #16db93;
